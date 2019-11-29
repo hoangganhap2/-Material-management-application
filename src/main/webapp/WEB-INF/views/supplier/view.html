@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/create-material">Create new material</a>
+<h1>Suppliers</h1>
+<p>
+    <a href="/suppliers">Supplier list</a>
+</p>
+<table border="1">
+    <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>ImportDate</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Image</th>
+        <th>Supplier</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="material : ${materials}">
+        <tr>
+            <td th:text="${material.code}"></td>
+            <td th:text="${material.name}"></td>
+            <td th:text="${material.importDate}"></td>
+            <td th:text="${material.description}"></td>
+            <td th:text="${material.price}"></td>
+            <td th:text="${material.quantity}"></td>
+            <td><img th:src="${material.images}" width="100px" height="100px"></td>
+            <td th:text="${material.supplier.name}"></td>
+            <td><a th:href="@{/edit-material/__${material.id}__ }">Edit</a></td>
+            <td><a th:href="@{/delete-material/__${material.id}__ }">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
