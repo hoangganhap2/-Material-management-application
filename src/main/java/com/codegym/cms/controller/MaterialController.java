@@ -114,7 +114,7 @@ public class MaterialController {
     }
 
     @PostMapping("/delete-material")
-    public String deleteCustomer(@ModelAttribute("material") Material material){
+    public String deleteMaterial(@ModelAttribute("material") Material material){
         materialService.remove(material.getId());
         return "redirect:materials";
     }

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89108b22-11ae-4d88-933a-67cfdeffc919" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +201,7 @@
       <workItem from="1574870941448" duration="1404000" />
       <workItem from="1574945517126" duration="12673000" />
       <workItem from="1574988729491" duration="16053000" />
-      <workItem from="1575088904344" duration="6154000" />
+      <workItem from="1575088904344" duration="7484000" />
     </task>
     <servers />
   </component>
